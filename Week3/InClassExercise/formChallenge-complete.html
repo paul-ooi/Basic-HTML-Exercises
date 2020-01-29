@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Syntax</title>
+    </head>
+    <body>
+       <h1>Booking a Tour</h1>
+        <form>
+            <label for="username">Name: </label>
+            <input name="username" id="username" type="text" placeholder="Pick something unique!"/>
+            <br/> <!-- using line break elements to add a new line between elements -->
+            <label for="email">Email: </label>
+            <input name="email" id="email" type="email"/>
+            <br/>
+            <label for="telephone">Telephone: </label>
+            <input name="telephone" id="telephone" type="tel"/>
+            <br/>
+            <label for="date">Date: </label>
+            <input name="date" id="date" type="date"/>
+            <br/>
+
+            <fieldset>
+                <legend>Choose your preferred time: </legend>
+                <div>
+                  <input type="radio" id="morning" name="timeofday" value="morning">
+                  <label for="morning">Morning</label>
+                </div>
+                 <div>
+                  <input type="radio" id="afternoon" name="timeofday" value="afternoon">
+                  <label for="afternoon">Afternoon</label>
+                </div>
+                 <div>
+                  <input type="radio" id="evening" name="timeofday" value="evening">
+                  <label for="evening">Evening</label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <!-- Example Input checkboxes taken from MDN Documentation (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) -->
+                <legend>Choose your interests (Check all that apply): </legend>
+                <div>
+                  <input type="checkbox" id="coding" name="interest" value="coding">
+                  <label for="coding">Coding</label>
+                </div><!-- another way to break up elements is to wrap them in a div element -->
+                <div>
+                  <input type="checkbox" id="music" name="interest" value="music">
+                  <label for="music">Music</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="art" name="interest" value="art">
+                  <label for="art">Art</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="sports" name="interest" value="sports">
+                  <label for="sports">Sports</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="cooking" name="interest" value="cooking">
+                  <label for="cooking">Cooking</label>
+                </div>
+            </fieldset>
+            <br/>
+            <select>
+                <option value="">-- Select Campus --</option>
+                <option value="north">North Campus</option>
+                <option value="lake">Lakeshore Campus</option>
+                <option value="orangeville">Orangeville Campus</option>
+            </select>
+            <br/>
+            <br/>
+            <div>
+              <button type="submit">Submit form</button>
+            </div>
+        </form>
+    </body>
+</html>

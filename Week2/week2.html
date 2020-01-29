@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>DGAS156 Web Design - Week 2</title>
+
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/reveal.css">
+		<link rel="stylesheet" href="../plugin/reveal-a11y/accessibility/helper.css">
+		<link rel="stylesheet" href="../css/theme/solarized.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../css/print/pdf.css' : '../css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# DGAS156 - Web Design
+						*Week #2 (January 15, 2020)*
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Class Overview
+						- Recap Elements
+						- File & Folder structure of a website
+						- Walk-Thru of Cookie recipe
+						- Assignment #1
+						- Basic HTML Structure
+						- Commenting
+						- In-class Submission
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Last week HTML elements
+						```html
+						<h1>Heading 1</h1>
+						<h2>Heading 2</h2>
+						<h3>Heading 3</h3>
+						<h4>Heading 4</h4>
+						<h5>Heading 5</h5>
+						<h6>Heading 6</h6>
+						```
+						<!--  .element: style="text-align: center;" -->
+						```html
+						<p>paragraph content</p>
+						```
+						<!--  .element: style="text-align: center;" -->
+					</textarea>
+				</section>
+				<section data-notes="So many good finds, and we'll go through most of them in this course, now you're familiar with some of the resources to look up their definition in the future">
+						<h1>
+							Elements you found
+						</h1>
+						<ul class="column-list">
+							<li>&lt;div&gt;&lt;/div&gt;</li>
+							<li>&lt;svg&gt;&lt;/svg&gt;</li>
+							<li>&lt;ul&gt;&lt;/ul&gt;</li>
+							<li>&lt;ol&gt;&lt;/ol&gt;</li>
+							<li>&lt;li&gt;&lt;/li&gt;</li>
+							<li>&lt;section&gt;&lt;/section&gt;</li>
+							<li>&lt;iframe&gt;&lt;/iframe&gt;</li>
+							<li>&lt;footer&gt;&lt;/footer&gt;</li>
+							<li>&lt;table&gt;&lt;/table&gt;</li>
+							<li>&lt;form&gt;&lt;/form&gt;</li>
+							<li>&lt;button&gt;&lt;/button&gt;</li>
+							<li>&lt;a&gt;&lt;/a&gt;</li>
+							<li>&lt;img/&gt;</li>
+							<li>&lt;br/&gt;</li>
+							<li>&lt;html&gt;&lt;/html&gt;</li>
+							<li>&lt;head&gt;&lt;/head&gt;</li>
+							<li>&lt;meta&gt;&lt;/meta&gt;</li>
+							<li>&lt;script&gt;&lt;/script&gt;</li>
+							<li>&lt;style&gt;&lt;/style&gt;</li>
+							<li>&lt;body&gt;&lt;/body&gt;</li>
+						</ul>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Document structure
+						<small style="font-size: 0.8em;">mainly used to define the presentation of a document, and it's relation to other documents</small>
+						
+						| Element Tag(s) | Description |
+						|----|----|
+						| `<html></html>` | Contains the entire document itself | 
+						| `<head></head>` | Where all the metadata goes | 
+						| `<body></body>` | The area where your content goes | 
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:" data-separator-vertical="^---">
+					<textarea data-template>
+						# Document Metadata
+						<small style="font-size: 0.8em;">mainly used to define the presentation of a document, and it's relation to other documents</small>
+						
+						| Element Tag(s) | Description |
+						|----|----|
+						| `<title></title>` | Title of the document | 
+						| `<meta/>` | Can be used to define various characteristics of the document | 
+						| `<link/>` | Link other resources to this document like stylesheets | 
+						
+						---
+
+						| Element Tag(s) | Description |
+						|----|----|
+						| `<script></script>` | Used to link external Javascript file but also used to embed Javascript directly | 
+						| `<style></style>` | Used to embed CSS syntax stylesheet (more later in the semester) |
+
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:" data-separator-vertical="^---">
+					<textarea data-template>
+						# Let's Code!
+						**always, save these class files for your own reference**
+						<!--  .element: style="font-size: 0.8em;" -->
+						1. Go to Start Menu > Brackets
+						1. File > Open Folder ...
+							1. Navigate to the Desktop in the new dialog window
+							1. Create a new folder called "website"
+							1. Go into the "website" Folder
+							1. Click Open
+						1. File > new
+						1. File > Save As... "index.html" (save inside the "website" folder)
+
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Let's build a basic HTML file
+						```html
+						<!DOCTYPE html>
+						<html>
+							<head>
+								<meta charset="UTF-8">
+								<title>Title goes here</title>
+							</head>
+							<body>
+								Content goes here
+							</body>
+						</html>
+						```
+						<!--  .element: style="display:inline;" -->
+
+
+						SlideNotes: 
+						- Important to set `charset` type of encoding so the browser know how to interpret the character symbols used
+						- doctype element tells the browser what version of HTML is being used, this case it's HTML5, the exclaimation mark is important
+						- Language is best practice to identify in the `html` tag, to help screen readers as well as search engines know what language the page is intended for `lang="en"`
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Common HTML Elments
+
+						| Element Tag(s) | Description |
+						|----|----|
+						| `<a></a>` | Anchor, link to other pages and resources | 
+						| `<div></div>` | No special meaning, just helps to divide content | 
+						| `<ul></ul>` | Unordered List (bullet point list) | 
+						| `<ol></ol>` | Ordered List (1, 2, 3,...) | 
+						| `<li></li>` | list item | 
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Quick word about Semantics
+						## Semantic *(si'mantik)*<!--  .element: style="font-weight: normal; font-size: 0.75em; opacity: 0.7;" -->
+						> **adj.** relating to meaning in language or logic \
+						> (Oxford Dictionary)
+						<!--  .element: style="text-align:left;" -->
+						When HTML is refered to as being **"semantically correct"**, it means that the HTML is correctly structured/described based on the content's meaning
+						<!--  .element: style="text-align:left;" -->
+
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# In-Class Walk-Thru
+						Download "Exercise 1 HTML Basics.zip" file from Blackboard
+
+						## Task
+						- Use Elements that previously covered and begin wrapping the content as you see fit
+						- If you're stuck, Think about how recipes are displayed (visit recipe webistes to get ideas, use the dev tools)
+						- If you're still stuck, raise your hand and I'll come to you
+						- use [https://w3schools.com](w3schools.com) to find out how to use the `<img>` tag
+					</textarea>
+				</section>
+				<section  data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Break
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Assignment #1 (20%)
+						- Fully functional multi-page website (no styles, except what is provided default from browser)
+						- uses proper file and folder structure for a website (have all the folders and if you have no content for a folder because we haven't learnt it yet, place a simple text file to describe the types files that would go there.)
+						<br>
+						Assignment #1 Details on Blackboard
+					</textarea>
+                </section>
+                <section>
+					<h1>File & Folder structure to a website</h1>
+					<div data-fragment-index="1" class="fragment folder-level-0">My Site/</div>
+					<div data-fragment-index="1" class="fragment folder-level-1">index.html</div>
+					<div data-fragment-index="5" class="fragment folder-level-1">about.html</div>
+					<div data-fragment-index="2" class="fragment folder-level-1">assets/</div>
+					<div data-fragment-index="3" class="fragment folder-level-2">images/</div>
+					<div data-fragment-index="4" class="fragment folder-level-3">images.png</div>
+					<div data-fragment-index="3" class="fragment folder-level-2">styles/</div>
+					<div data-fragment-index="4" class="fragment folder-level-3">styles.css</div>
+					<div data-fragment-index="3" class="fragment folder-level-2">scripts/</div>
+					<div data-fragment-index="4" class="fragment folder-level-3">scripts.js</div>
+                </section>
+				<section>
+					<img src="../images/Folder-Structure.png" alt="">
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Let's build a basic HTML file
+						```html
+						<!DOCTYPE html>
+						<html>
+							<head>
+								<meta charset="UTF-8">
+								<title>Title goes here</title>
+							</head>
+							<body>
+								Content goes here
+							</body>
+						</html>
+						```
+						<!--  .element: style="display:inline;" -->
+
+
+						SlideNotes: 
+						- Important to set `charset` type of encoding so the browser know how to interpret the character symbols used
+						- doctype element tells the browser what version of HTML is being used, this case it's HTML5, the exclaimation mark is important
+						- Language is best practice to identify in the `html` tag, to help screen readers as well as search engines know what language the page is intended for `lang="en"`
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Basic HTML Structure
+						 - we have the Elements that wrap the content itself
+						 - These elements make up the content of the webpage viewable in the browser, consider it the body of the webpage
+						 - Webpages also have a head, which contain some important definitive information about itself, not always visible in the browser
+						 - What have you found in head section so far?
+						 - What do you know about SEO?
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Comment syntax
+						 - Why?
+						 - How? ...syntax
+						 - When? *(debugging)*
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Comments Example
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Blocks vs Inline Example
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Weekly In-Class Blackboard submission
+
+						## Requirements: <!--  .element: style="text-align: left;" -->
+						- Create a Homepage for your Assignments
+						- *index.html* Must haves:
+							- Your first and last name (main title)
+							- Course code and Class Section Name (subtitle)
+							- 3 links for Assignments
+					</textarea>
+				</section>
+				<section data-markdown data-separator-notes="^SlideNotes:">
+					<textarea data-template>
+						# Next week
+
+						- Categorize the markup/code we've been using
+						- New Elements
+						- More to practice
+					</textarea>
+				</section>
+			</div>
+		</div>
+
+		<script src="../js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				width: '90%',
+    			height: '100%',
+				markdown: {
+					smartLists: true,
+					smartypants: true,
+					langPrefix: 'syntax-',
+				},
+				hash: true,
+				history: true,
+				dependencies: [
+					{ src: '../plugin/markdown/marked.js' },
+					{ src: '../plugin/markdown/markdown.js' },
+					{ src: '../plugin/notes/notes.js', async: true },
+					{ src: '../plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

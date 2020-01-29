@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/> 
+        <title>Week 3 - In Class Assignment</title>
+    </head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <body>
+        <h1>Transit Rates</h1>
+        <table>
+            <tr>
+                <th></th>
+                <th>Adult</th>
+                <th>Senior/Youth</th>
+                <th>Children(ages 12 and under)</th>
+            </tr>
+            <tr>
+                <th>Cash</th>
+                <td>$3.25</td>
+                <td>$2.20</td>
+                <td rowspan="7">FREE</td>
+            </tr>
+            <tr>
+                <th>Presto</th>
+                <td>$3.10</td>
+                <td>$2.15</td>
+            </tr>
+            <tr>
+                <th rowspan="3">Presto Ticket</th>
+                <td colspan="2">One-ride-ticket $3.10</td>
+            </tr>
+            <tr>
+                <td colspan="2">Two-ride-ticket $6.50</td>
+            </tr>
+            <tr>
+                <td colspan="2">Day pass ticket $13.00</td>
+            </tr>
+            <tr>
+                <th>TTC Monthly Pass</th>
+                <td>$151.15</td>
+                <td>$122.45</td>
+            </tr>
+            <tr>
+                <th>Post-Secondary Monthly Pass</th>
+                <td colspan="2">$122.45</td>
+            </tr>
+        </table>
+        <hr/>
+        <form>
+            <label for="username">Username: </label>
+            <input name="username" id="username" type="text" />
+            <br/>
+            <label for="email">Your Email: </label>
+            <input name="email" id="email" type="email" />
+            <br/>
+            <label for="password">Password: </label>
+            <input name="password" id="password" type="password" />
+            <br/>
+            <label for="message">Your Message: </label>
+            <textarea id="message" name="message" placeholder="Your message here..."></textarea>
+            <br/>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

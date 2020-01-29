@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- THE DOCTYPE TAG IS IMPORTANT AS IT TELLS THE BROWSER WHAT VERSION OF HTML IS TO BE USED WHEN INTERPRETTING THIS HTML DOCUMENT. IN THIS CASE, IT REFERS TO HTML5. -->
+
+<!-- THE HTML TAG IS THE ROOT TAG OF THE DOCUMENT, AND ONLY HAS 2 CHILDREN/NESTED TAGS. THE HEAD AND BODY TAGS. SHOWN HERE IS AN EXAMPLE OF A LANG(LANGUAGE) ATTRIBUTE. IT DEFINES THE LANGUAGE THAT IS USED IN THE DOCUMENT. IF YOU'RE WORKING ON A FRENCH DOCUMENT, YOU CAN SET THE LANG ATTRIBUTE TO 'FR' IN LOWERCASE. -->
+<html lang="en">
+    <!-- THE HEAD TAG CONTAINS INFORMATION THAT YOU WOULDN'T SEE IN THE MAIN AREA OF A BROWSER BUT IS IMPORTANT TO THE HTML DOCUMENT ITSELF AND CAN ALSO INCLUDE META TAGS RELATED TO SEO, AS WELL AS LINKS TO EXTERNAL RESOURCES LIKE STYLESHEETS -->
+    <head>
+        <meta charset="UTF-8"> <!-- THE CHARSET VALUE OF UTF-8 TELLS THE BROWSER HOW TO INTERPRET LETTERS, CHARACTERS AND SEPCIAL CHARACTERS LIKE #, $, <, >, ETC. GENERALLY THE STANDARD THESE DAYS US TO USE UTF-8, AND IS CASE-INSENSITIVE, SO IT IS VALID TO USE utf-8 OR UTF-8 -->
+        <title>Cookie Recipe</title> <!-- THE TITLE IS WHAT IS DISPLAYED IN THE BROWSER'S TAB AREA, AND AS THE TITLE TO A PAGE ON A SEARCH ENGINE RESULTS PAGE -->
+    </head>
+
+    <!-- THE BODY IS WHERE ALL THE CONTENT GOES, THIS IS WHERE YOU'RE CODE WILL GO AND WHAT WILL TYPICALLY BE DISPLAYED IN THE MAIN AREA OF THE BROWSER -->
+    <body>
+
+        <!-- THE MAIN TITLE OF THE PAGE THAT VISITORS WILL SEE DIRECTLY ON THE PAGE, MOST TIMES THIS CAN BE THE SAME TITLE IN THE TITLE TAG, OR SOME PART OF IT, BUT IT'S NOT NECESSARY THAT THEY'RE THE SAME. JUST MAKES SENSE IF THEY'RE RELATED -->
+        <h1>Chocolate Mint Cookies</h1>
+
+        <!-- I'M USING A PARAGRAPH TAG HERE BECAUSE IT'S MORE SUITED CONTENT THAT IS SUPPORTING TO THE HEADING ABOVE. IT'S POSSIBLE THAT YOU CAN USE A H2 HEADING HERE BUT THINK OF IT AS AN OUTLINE IN AN ESSAY. THIS WOULD BE A REALLY LONG HEADING IF IT WAS ONE. SO PARAGRAPH SEEMS MORE APPROPRIATE. USE YOUR BEST JUDGEMENT. -->
+        <p>"This is a melt in your mouth chocolate cookie that has a chocolate mint frosting. It's delicious and it's easy!"
+        </p>
+
+        <!-- THE IMG TAG, FOR IMAGES, IS AN EXAMPLE OF A SELF CLOSING HTML TAG. THIS TAG REQUIRES A SRC (SOURCE) ATTRIBUTE, TO TELL IT WHAT RESOURCE/ASSET IT NEEDS TO REFERENCE TO BE DISPLAYED. HERE I'VE ALSO ADDED AN ALT (ALTERNATIVE TEXT) ATTRIBUTE, AS A DESCRIPTOR FOR THE IMAGE. THE ALT TEXT IS USED BY SCREEN READERS AS WELL AS A PLACEHOLDER IF FOR SOME REASON YOUR IMAGE IS BROKEN/CORRUPT/HASN'T FULLY LOADED YET. -->
+        <img src="../starter/main.jpg" alt="Delicuously glossy light brown chocolate chip cookies" />
+
+
+        <!-- BELOW THIS H2 HEADING IS AN UNORDERED LIST, A BULLET LIST. YOU AS DESIGNERS WILL KNOW WHAT IS GOING TO BE A LIST WHERE THE ORDER IS NOT CRUCIAL TO THE MEANING/UNDERSTANDING OF INFORMATION ON THE PAGE. WHEN WE LEARN ABOUT STYLING, WE CAN VISUALLY HIDE THE BULLET POINTS AND STILL SEMANTICALLY HAVE A LIST. THIS CAN BE COMMUNICATED TO THE DEVELOPER YOU'RE WORKING WITH AND THE UL TAG MAY BE A GOOD SOLUTION TO IDENTIFY TO VISITORS THERE'S A LIST PRESENT. -->
+        <h2>Ingredients</h2>
+        <ul>
+            <li>3/4 cup butter</li>
+            <li>1 1/2 cups packed brown sugar</li>
+            <li>2 tablespoons water</li>
+            <li>2 cups semisweet chocolate chips </li>
+            <li>2 eggs</li>
+            <li>2 1/2 cups all-purpose flour</li>
+            <li>1 1/4 teaspoons baking soda</li>
+            <li>1/2 teaspoon salt</li>
+            <li>36 chocolate mint wafer candies</li>
+        </ul>
+
+        <!-- BELOW THIS H2 HEADING IS AN ORDERED LIST, A NUMBERED LIST. LIKE THE UNORDERED LIST, IT USES LI(LIST ITEM) TAGS TO WRAP AND IDENTIFY THE ITEM IN THE LIST. IN MORE COMPLEX LAYOUTS MAYBE YOU NEED TO HAVE A SUB-LIST, AND YOU CAN HAVE A CHILD LIST WITHIN THE LIST ITEM OF A PARENT LIST. -->
+        <h2>Directions</h2>
+        <ol>
+            <li>In a large pan over low heat, cook butter, sugar and water until butter is melted.</li>
+            <li>Add chocolate chips and stir until partially melted.</li>
+            <li>Remove from heat and continue to stir until chocolate is completely melted.</li>
+            <li>Pour into a large bowl and let stand 10 minutes to cool off slightly.</li>
+            <li>At high speed, beat in eggs, one at a time into chocolate mixture.</li>
+            <li>Reduce speed to low and add dry ingredients, beating until blended. </li>
+            <li>Chill dough about 1 hour.</li>
+            <li>Preheat oven to 350 degrees F (175 degrees C).</li>
+            <li>Roll dough into balls and place on ungreased cookie sheet about 2 inches apart.</li>
+            <li>Bake 8-10 minutes. </li>
+            <li>While cookies are baking unwrap mints and divide each in half.</li>
+            <li>When cookies are brought out of the oven, put 1/2 mint on top of each cookie. </li>
+            <li>Let the mint sit for up to 5 minutes until melted, then spread the mint on top of the cookie. Eat and enjoy!
+            </li>
+        </ol>
+
+    </body>
+
+</html>

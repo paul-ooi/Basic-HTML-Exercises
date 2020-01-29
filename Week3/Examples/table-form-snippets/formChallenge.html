@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Syntax</title>
+    </head>
+    <body>
+       <h1>Booking a Tour</h1>
+        <form>
+            <label for="username">Name: </label>
+            <input id="username" name="username" type="text" placeholder="Pick something unique!"/>
+            <br/> <!-- using line break elements to add a new line between elements -->
+
+            <label for="email">Email: </label>
+            <input id="email" name="email" type="email" required/>
+            <!-- Add the attribute required, to make this field required before submitting the form -->
+            <br/>
+
+            <label for="telephone">Telephone: </label>
+            <input id="telephone" name="telephone" type="tel"/>
+            <br/>
+
+            <label for="date">What day do you want to go on the tour?: </label>
+            <input id="date" name="date" type="date"/>
+            <br/>
+
+            <fieldset>
+                <legend>Choose your preferred time: </legend>
+                <div>
+                  <input id="morning" type="radio" name="timeofday" value="morning">
+                  <label for="morning">Morning</label>
+                </div>
+                 <div>
+                  <input id="afternoon" type="radio" name="timeofday" value="afternoon">
+                  <label for="afternoon">Afternoon</label>
+                </div>
+                 <div>
+                  <input id="evening" type="radio" name="timeofday" value="evening">
+                  <label for="evening">Evening</label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <!-- Example Input checkboxes taken from MDN Documentation (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) -->
+                <legend>Choose your interests (Check all that apply): </legend>
+                <div>
+                  <input id="coding" type="checkbox" name="interest" value="coding">
+                  <label for="coding">Coding</label>
+                </div><!-- another way to break up elements is to wrap them in a div element -->
+                <div>
+                  <input id="music" type="checkbox" name="interest" value="music">
+                  <label for="music">Music</label>
+                </div>
+                <div>
+                  <input id="art" type="checkbox" name="interest" value="art">
+                  <label for="art">Art</label>
+                </div>
+                <div>
+                  <input id="sports" type="checkbox" name="interest" value="sports">
+                  <label for="sports">Sports</label>
+                </div>
+                <div>
+                  <input id="cooking" type="checkbox" name="interest" value="cooking">
+                  <label for="cooking">Cooking</label>
+                </div>
+            </fieldset>
+            <br/>
+            
+            <label for="campus">What campus:</label>
+            <select id="campus" name="campus">
+                <option value="">-- Select Campus --</option>
+                <option value="north">North Campus</option>
+                <option value="lake">Lakeshore Campus</option>
+                <option value="orangeville">Orangeville Campus</option>
+            </select>
+
+            <br/>
+            <br/>
+            <div>
+              <button type="submit">Submit form</button>
+            </div>
+        </form>
+    </body>
+</html>

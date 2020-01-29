@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Table Example</title>
+
+        <style>
+            table, th,td {
+                border: 1px solid blue;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Simple example of a 2 row, 2 column table -->
+        <table>
+            <tr>
+                <td>Row 1, Column 1</td>
+                <td>Row 1, Column 2</td>
+            </tr>
+            <tr>
+                <td>Row 2, Column 1</td>
+                <td>Row 2, Column 2</td>
+            </tr>
+        </table>
+
+        <br/>
+
+       <!-- Add more meaning and structure to your table by grouping what to be conisidered as the Header (thead tag) and what to be considered as the Body (tbody tag) -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Table Head Row, Column 1</th>
+                    <th>Table Head Row, Column 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Column 1</td>
+                    <td>Row 1, Column 2</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Column 1</td>
+                    <td>Row 2, Column 2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br/>
+
+       <!-- Explore the use of colspan and rowspan -->
+        <table>
+            <thead>
+                <!-- thead tag groups the multiple headers you have -->
+                <tr>
+                    <th rowspan="2">Park Type</th>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">Location</th> <!-- This Column will spread over 2 columns (colspan) from where it starts from -->
+                </tr>
+                <tr>
+                    <th>Province</th>
+                    <th>Postal Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Provincial</td>
+                    <td>Algonquin Provincial Park</td>
+                    <td>Ontario</td>
+                    <td>M1M 1M1</td>
+                </tr>
+                <tr>
+                    <td>National</td>
+                    <td>Cape Breton Highlands National Park</td>
+                    <td>Nova Scotia</td>
+                    <td>M1M 1M1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br/>
+
+        <!-- Example of multiple level headers -->
+        <table>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Date of Birth</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">Parents</th>
+                    <th>Samantha</th>
+                    <td>45</td>
+                    <td>June 3, 1975</td>
+                </tr>
+                <tr>
+                    <th>Jeremy</th>
+                    <td>37</td>
+                    <td>Feb 26, 1982</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Children</th>
+                    <th>Johnny</th>
+                    <td>4</td>
+                    <td>July 3, 2015</td>
+                </tr>
+                <tr>
+                    <th>Sarah</th>
+                    <td>18</td>
+                    <td>Feb 26, 2001</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

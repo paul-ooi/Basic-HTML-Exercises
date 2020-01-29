@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Syntax</title>
+    </head>
+    <body>
+       <h1>Simple Form example</h1>
+        <form>
+            <label for="username">Name: </label>
+            <input name="username" id="username" type="text" placeholder="Awesome!"/><!-- placeholder is used to help the user know what info to enter -->
+            <br/> <!-- using line break elements to add a new line between elements -->
+            <label for="email">Email: </label>
+            <input name="email" id="email" type="email" required/> <!-- required attribute is assign without a value. Using type="email" here will enable a different keyboard on mobile devices -->
+            <br/>
+            <label for="pass">Password: </label> <!-- for attribute is used to link to a form control that has the same id value as the for value -->
+            <input name="pass" id="pass" type="password"/> <!-- The id value here is the same as the label on the line above so they are associated/paired together. The Name attribute is used when processing the form. If you click the Submit button you'll see the address bar information change with values assigned to names used in the form-->
+            <br/>
+            <br/>
+            <br/>
+            <div>
+              <button type="submit">Submit form</button> <!-- You can only have one submit type input/button per form element -->
+            </div><!-- using div elements to group children elements into a block element, to force the inline element to appear on a new line -->
+        </form>
+    </body>
+</html>
