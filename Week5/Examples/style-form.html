@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>CSS - Form</title>
+        <style>
+
+            body {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            label {
+                padding: 0.5em 1em 0.5em 0px;
+                min-height: 1.5em;
+                margin-bottom: 1em;
+                
+                /* display: inline-block;
+                min-width: 100px;
+                max-width: 300px; */
+            }
+            
+            input {
+                padding: 0.5em 1em 0.5em 0px;
+                /* display: inline-block;
+                min-width: 100px;
+                max-width: 300px; */
+                margin-bottom: 1em;
+            }
+
+            input:focus, select:focus, button:focus {
+                outline: 3px dotted teal;
+            } 
+
+            fieldset {
+                padding: 0px;
+                border: none;
+                margin: 1em 0;
+            }
+
+            legend {
+                font-weight: bold;
+                margin-bottom: 0.5em;
+            }
+
+            select {
+                padding: 1em 2em;
+                border-radius: 5px;
+                box-shadow: inset 0.25em grey;
+            }
+
+            button {
+                padding: 0.5em 1em;
+                border-radius: 5px;
+                background: paleturquoise;
+                font-weight: bold;
+                border: 2px solid blue;
+                transition: 0.3s;
+            }
+
+            button:hover {
+                background: blue;
+                font-weight: bold;
+                color: white;
+                border: 2px solid paleturquoise;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <h1>Booking a Tour</h1>
+
+        <form>
+            <label for="username">Name: </label>
+            <input name="username" id="username" type="text" placeholder="Pick something unique!"/>
+            <br/> <!-- using line break elements to add a new line between elements -->
+            <label for="email">Email: </label>
+            <input name="email" id="email" type="email"/>
+            <br/>
+            <label for="telephone">Telephone: </label>
+            <input name="telephone" id="telephone" type="tel"/>
+            <br/>
+            <label for="date">Date: </label>
+            <input name="date" id="date" type="date"/>
+            <br/>
+
+            <fieldset>
+                <legend>Choose your preferred time: </legend>
+                <input type="radio" id="morning" name="timeofday" value="morning">
+                <label for="morning">Morning</label>
+                <br>
+                <input type="radio" id="afternoon" name="timeofday" value="afternoon">
+                <label for="afternoon">Afternoon</label>
+                <br>
+                <input type="radio" id="evening" name="timeofday" value="evening">
+                <label for="evening">Evening</label>
+            </fieldset>
+            
+            <fieldset>
+                <!-- Example Input checkboxes taken from MDN Documentation (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) -->
+                <legend>Choose your interests (Check all that apply): </legend>
+                <div>
+                    <input type="checkbox" id="coding" name="interest" value="coding">
+                    <label for="coding">Coding</label>
+                </div><!-- another way to break up elements is to wrap them in a div element -->
+                <div>
+                    <input type="checkbox" id="music" name="interest" value="music">
+                    <label for="music">Music</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="art" name="interest" value="art">
+                    <label for="art">Art</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sports" name="interest" value="sports">
+                    <label for="sports">Sports</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cooking" name="interest" value="cooking">
+                    <label for="cooking">Cooking</label>
+                </div>
+            </fieldset>
+            <br/>
+            <select>
+                <option value="">-- Select Campus --</option>
+                <option value="north">North Campus</option>
+                <option value="lake">Lakeshore Campus</option>
+                <option value="orangeville">Orangeville Campus</option>
+            </select>
+            <br/>
+            <br/>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
