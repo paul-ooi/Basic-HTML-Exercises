@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>CSS - Internal Style Complex Selectors</title>
+        <style>
+
+            /* Override default user agent styling */
+            fieldset {
+                padding: 0px;
+                border: none;
+            }
+
+
+            legend {
+                font-size: 2em;
+            }
+
+            /* Use a complex selector  */
+            input:checked + label{
+                font-weight: 700;
+                font-size: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+
+        <form>
+          
+            <!-- FOR BETTER WAYS OF GROUPING YOUR OPTIONS, LOOK AT THE <fieldset> ELEMENT -->
+
+            <fieldset>
+                <legend>Who is your favourite music artist? </legend>
+                <input id="justin" type="checkbox" name="artist" value="bieber">
+                <label for="justin">Bieber</label>
+                <br/>
+    
+                <input id="billie" type="checkbox" name="artist" value="eilish">
+                <label for="billie">Eilish</label>
+                <br/>
+    
+                <input id="miley" type="checkbox" name="artist" value="cyrus">
+                <label for="miley">Cyrus</label>
+                <br/>
+    
+                <input id="other" type="checkbox" name="artist" value="eww gross">
+                <label for="other">Neither</label>
+                <br/>
+            </fieldset>
+
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </body>
+</html>

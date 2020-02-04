@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>CSS - Internal Style Override specificity</title>
+        <style>
+
+            p.special {
+                color: fuchsia;    
+            }
+
+            p {
+                color: red;
+            }
+
+            p {
+                color: darkgreen;
+            }
+            /* Color of the paragraph will render as darkgreen because it appears after the red, unless it has the added specificity of a class */
+        </style>
+    </head>
+    <body>
+
+        <p class="special">Incididunt ullamco in ullamco tempor quis nisi. Sit proident incididunt et est ex reprehenderit ea id voluptate. Magna non ullamco do proident commodo commodo. Commodo pariatur sunt non non veniam deserunt magna nostrud tempor non.</p>
+
+        <p>Nisi sunt Lorem mollit ut adipisicing laborum deserunt dolore labore aliquip consequat veniam exercitation labore. Commodo tempor labore adipisicing cillum Lorem eiusmod et ut aute. Culpa eu deserunt enim fugiat. Amet anim dolor sint eu mollit pariatur aliquip cupidatat fugiat tempor consequat duis occaecat.</p>
+
+    </body>
+</html>

@@ -1,0 +1,13 @@
+h1 {
+	font-style: italic;
+	font-size: 25px;
+	color: crimson;
+}
+
+p.special {
+	color: chocolate;
+}
+
+p {
+	color: blueviolet;
+}
