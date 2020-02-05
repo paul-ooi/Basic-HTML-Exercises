@@ -1,0 +1,22 @@
+h1 {
+	color: yellow;
+	font-size: large;
+	border: 3px solid pink;
+	margin-left: 1em;
+	padding-left: 1em;
+	background-color: darkcyan;
+
+	/*                text-align: center;*/
+}
+p {
+	color: darkcyan;
+	border: 1px solid black;
+	margin-left: 5em;
+	padding-left: 2em;
+	background-color: yellow;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}

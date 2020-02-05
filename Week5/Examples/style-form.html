@@ -8,6 +8,25 @@
             body {
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
+            
+            h1:hover {
+                text-decoration: underline;
+                font-style: italic;
+                color: deeppink;
+                transition: 1.3s;
+            }
+
+            /* form > label {
+                color: maroon;
+            } */
+            #email, #username, #telephone, #date {
+                color: maroon;
+            }
+            
+            form > label::after {
+                content: "*";
+            }
+
             label {
                 padding: 0.5em 1em 0.5em 0px;
                 min-height: 1.5em;
