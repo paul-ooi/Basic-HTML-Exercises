@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 400;
+}
+
+header {
+	height: 60px;
+	background-color: rgba(255, 220, 107, 0.4);
+}
+
+#logo {
+	float: left;
+	max-height: 60px;
+}
+
+#main-nav {
+	float: right;
+	margin-top: 15px;
+}
+
+#main-nav ul {
+	list-style-position: inside; /* by default, these are outside the block element itself */
+	list-style: none;
+	padding: 0px;
+	margin: 0px; /* override ua-styling */
+}
+
+#main-nav ul li {
+	display: inline-block;
+	padding: 10px 20px;
+	/* background-color: darkmagenta; */
+}
+
+#main-nav a {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 1.2px;
+	text-decoration: none;
+	color: rgb(46, 139, 87);
+	transition: 0.3s;
+	/* padding: 10px 20px; */ /* Instead of placing the padding on the li, place it on the anchor to give the use a larger target to click */
+}
+
+#main-nav a:hover {
+	background: rgb(46, 139, 87);
+	color: white;
+}
+
+.feature-container {
+	clear: both; /* re-establishes normal flow, without float */
+	height: 400px;
+	padding-top: 150px; /* to position the h1 vertically inside */
+	/* box-sizing: border-box; */ /* Because we're adding a padding, it makes our container larger with the default content-box*/
+
+	/* Using a photograph */
+	/* background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(./images/jay-wennington-N_Y88TWmGwA-unsplash.jpg); */
+	/* Photo by Jay Wennington on Unsplash.com */
+
+	/* Using a pattern to repeat */
+	background-size: 30%;
+	background-position: center;
+	background-color: darkgreen;
+	background-blend-mode: multiply;
+	background-image: url(./images/Wave_Pattern.png);
+	/* https://commons.wikimedia.org/wiki/File:Japanese_Wave_Pattern.svg#file */
+}
+
+.feature-container h1 {
+	vertical-align: middle;
+	color: white;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+	font-size: 4em;
+	max-width: 60%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* using an img tag */
+/* .feature-container {
+	height: 400px;
+	overflow: hidden;
+	padding-top: 0px;
+	position: relative;
+}
+.feature-container img {
+	max-width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.feature-container h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+} */
