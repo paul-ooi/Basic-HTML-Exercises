@@ -1,0 +1,54 @@
+/* Comment */
+
+/* Change the look of all ul elements, by removing bullet points and removing spacing around */
+ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Target the li elements that are a direct descendant of a ul element which is a direct descendant of a nav element*/
+nav > ul > li {
+	display: inline-block; /* Make li's flow inline and still have block like characteristics*/
+	position: relative; /* Important because we're taking the child ul out of normal flow */
+}
+
+a {
+	display: block; /* by default this is inline element, so top and bottom padding and margin do not affect the appearance. Modify display value to be block to allow top and bottom spacing to take affect, and for the anchor to take up the whole width of the parent li element. Using inline-block will cause undesired effect with the background fill color*/
+	padding: 1em; /* Since Padding sits within the Element, it adds to the area available to click */
+
+	/* modify default anchor styling */
+	text-decoration: none;
+	font-weight: 700;
+	color: rgb(36, 119, 57);
+}
+
+/* Hide the Submenu and assign styling for when the page initially loads */
+nav li > ul,
+.submenu {
+	position: absolute; /* This value takes it out of normal flow */
+	display: none; /* This hides the submenu */
+
+	background: #d6e1e7;
+	box-shadow: 2px 2px 2px rgba(211, 193, 193, 0.4);
+	left: 0; /* Position the left most part of this ul to the nearest ancestor element that is position: relative */
+	top: 75%; /* Position the top most part of this ul to the nearest ancestor element that is position: relative by 100% from their top edge position*/
+}
+
+/* When the mouse hovers over an anchor that is a descendant of an element with the submenu class, change the background to green and text to a light green */
+.submenu a:hover {
+	background: rgb(36, 119, 57);
+	color: rgb(190, 214, 196);
+}
+
+/* When the li element or element with a class of 'has-submenu' is hovered, apply the following set of rule declarations */
+nav > ul > li:hover,
+.has-submenu:hover {
+	overflow: initial;
+}
+
+/* When the li or element with class'has-submenu' is hovered, Make the submenu appear by applying the default display value to it*/
+nav > ul > li:hover ul,
+.has-submenu:hover .submenu {
+	display: initial;
+}
