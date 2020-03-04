@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position - Sticky</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Position - Sticky</title>
+        <style>
 
-        #demo-container {
-            border: 1px solid grey;
-            margin: 2em;
-            height: 600px;
-            width: 800px;
-        }
+            #demo-container {
+                border: 1px solid grey;
+                margin: 2em;
+                height: 600px;
+                width: 800px;
+            }
 
-        .example {
-            width: 100px;
-            height: 100px;
-            /* Add position: sticky to this CSS block to change the position on all divs with a class of example */
-        }
+            .example {
+                width: 100px;
+                height: 100px;
+                /* Add position: sticky to this CSS block to change the position on all divs with a class of example */
+            }
+            
+            #red {
+                background-color: rgb(255, 0, 0);
+                /* Add values for either top, right, bottom and/or left properties to this CSS block to change the position on the divs with the id of red */
         
-        #red {
-            background-color: rgb(255, 0, 0);
-            /* Add values for either top, right, bottom and/or left properties to this CSS block to change the position on the divs with the id of red */
-    
-        }
+            }
 
-        #blue {
-            background-color: rgb(106, 161, 250);
-            /* Add position: sticky to this CSS block to change the position of this div */
-            /* Add values for either top, right, bottom and/or left properties to this CSS block to change the position on the divs with the id of blue */
-            position: sticky;
-            top: 0px;
-        }
+            #blue {
+                background-color: rgb(106, 161, 250);
+                /* Add position: sticky to this CSS block to change the position of this div */
+                /* Add values for either top, right, bottom and/or left properties to this CSS block to change the position on the divs with the id of blue */
+                position: sticky;
+                top: 0px;
+            }
 
-        #green {
-            background-color: rgb(64, 255, 64);
-            /* Add values for either top, right, bottom and/or left properties to this CSS block to change the position on the divs with the id of green */
+            #green {
+                background-color: rgb(64, 255, 64);
+                /* Add values for either top, right, bottom and/or left properties to this CSS block to change the position on the divs with the id of green */
 
-        }
+            }
 
-    </style>
-</head>
-<body>
-    <h1>Demo - Position: Sticky</h1>
-    <!-- Lorem Ipsum text to allow scrolling on the page to demostrate the fixed position -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe nemo perferendis tempore vel quo natus aliquid id maxime fugiat repellat sequi consequuntur, numquam incidunt facere delectus, officiis sed. Quidem!</p>
-    <p>Rem non eius veritatis obcaecati iste saepe velit doloribus dignissimos animi suscipit impedit vero, dolorem corrupti quae sunt voluptate ducimus modi culpa perspiciatis blanditiis autem nihil nisi eligendi deserunt. Recusandae.</p>
-    <p>Reprehenderit, velit accusamus omnis numquam minus unde, aliquid nam sequi fuga dolores ab eligendi consequatur quia explicabo odio dicta reiciendis tempora officiis dolorum repudiandae. Vitae aliquam similique officia magnam qui!</p>
-    <p>Odio et, dolorem iste repellat itaque ea voluptas temporibus, exercitationem obcaecati delectus illo! Rerum esse, alias magni sit nulla maiores ad laudantium assumenda ipsa animi ipsum at cupiditate ut qui.</p>
-    <p>Nihil quis qui, ratione eaque inventore, aliquid odio magni maxime aliquam reprehenderit dolorem ea rerum facere. Officia, quia? Neque recusandae facere qui necessitatibus temporibus, nulla voluptas dolor adipisci modi fugit!</p>
-    <p>Eaque error consequatur vel tempora unde tempore illo dolorem tenetur porro sequi magni sed delectus perferendis reiciendis ea, cumque nesciunt, assumenda illum recusandae ratione voluptates dolores aliquid amet. Repellendus, in?</p>
+        </style>
+    </head>
+    <body>
+        <h1>Demo - Position: Sticky</h1>
+        <!-- Lorem Ipsum text to allow scrolling on the page to demostrate the fixed position -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe nemo perferendis tempore vel quo natus aliquid id maxime fugiat repellat sequi consequuntur, numquam incidunt facere delectus, officiis sed. Quidem!</p>
+        <p>Rem non eius veritatis obcaecati iste saepe velit doloribus dignissimos animi suscipit impedit vero, dolorem corrupti quae sunt voluptate ducimus modi culpa perspiciatis blanditiis autem nihil nisi eligendi deserunt. Recusandae.</p>
+        <p>Reprehenderit, velit accusamus omnis numquam minus unde, aliquid nam sequi fuga dolores ab eligendi consequatur quia explicabo odio dicta reiciendis tempora officiis dolorum repudiandae. Vitae aliquam similique officia magnam qui!</p>
+        <p>Odio et, dolorem iste repellat itaque ea voluptas temporibus, exercitationem obcaecati delectus illo! Rerum esse, alias magni sit nulla maiores ad laudantium assumenda ipsa animi ipsum at cupiditate ut qui.</p>
+        <p>Nihil quis qui, ratione eaque inventore, aliquid odio magni maxime aliquam reprehenderit dolorem ea rerum facere. Officia, quia? Neque recusandae facere qui necessitatibus temporibus, nulla voluptas dolor adipisci modi fugit!</p>
+        <p>Eaque error consequatur vel tempora unde tempore illo dolorem tenetur porro sequi magni sed delectus perferendis reiciendis ea, cumque nesciunt, assumenda illum recusandae ratione voluptates dolores aliquid amet. Repellendus, in?</p>
 
-    <div id="demo-container">
-        <div id="red" class="example">example DIV</div>
-        <div id="blue" class="example">example DIV</div>
-        <div id="green" class="example">example DIV</div>
-    </div>
-    
-    <p>Facere deserunt atque aperiam rerum corporis mollitia, et culpa aspernatur quia dolores deleniti nostrum maxime autem veniam corrupti iusto illum voluptate odio alias rem doloremque voluptatibus necessitatibus sed omnis. Deserunt?</p>
-    <p>Ut optio voluptatibus voluptate ipsa ea magni possimus inventore necessitatibus veniam neque, aut ab similique distinctio atque omnis, sit harum praesentium nostrum deserunt quas. Eaque quisquam deserunt ab temporibus similique.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe nemo perferendis tempore vel quo natus aliquid id maxime fugiat repellat sequi consequuntur, numquam incidunt facere delectus, officiis sed. Quidem!</p>
-    <p>Rem non eius veritatis obcaecati iste saepe velit doloribus dignissimos animi suscipit impedit vero, dolorem corrupti quae sunt voluptate ducimus modi culpa perspiciatis blanditiis autem nihil nisi eligendi deserunt. Recusandae.</p>
-    <p>Reprehenderit, velit accusamus omnis numquam minus unde, aliquid nam sequi fuga dolores ab eligendi consequatur quia explicabo odio dicta reiciendis tempora officiis dolorum repudiandae. Vitae aliquam similique officia magnam qui!</p>
-    <p>Odio et, dolorem iste repellat itaque ea voluptas temporibus, exercitationem obcaecati delectus illo! Rerum esse, alias magni sit nulla maiores ad laudantium assumenda ipsa animi ipsum at cupiditate ut qui.</p>
-    <p>Nihil quis qui, ratione eaque inventore, aliquid odio magni maxime aliquam reprehenderit dolorem ea rerum facere. Officia, quia? Neque recusandae facere qui necessitatibus temporibus, nulla voluptas dolor adipisci modi fugit!</p>
-    <p>Eaque error consequatur vel tempora unde tempore illo dolorem tenetur porro sequi magni sed delectus perferendis reiciendis ea, cumque nesciunt, assumenda illum recusandae ratione voluptates dolores aliquid amet. Repellendus, in?</p>
-    <p>Facere deserunt atque aperiam rerum corporis mollitia, et culpa aspernatur quia dolores deleniti nostrum maxime autem veniam corrupti iusto illum voluptate odio alias rem doloremque voluptatibus necessitatibus sed omnis. Deserunt?</p>
-    <p>Ut optio voluptatibus voluptate ipsa ea magni possimus inventore necessitatibus veniam neque, aut ab similique distinctio atque omnis, sit harum praesentium nostrum deserunt quas. Eaque quisquam deserunt ab temporibus similique.</p>
-    <p>Ut optio voluptatibus voluptate ipsa ea magni possimus inventore necessitatibus veniam neque, aut ab similique distinctio atque omnis, sit harum praesentium nostrum deserunt quas. Eaque quisquam deserunt ab temporibus similique.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe nemo perferendis tempore vel quo natus aliquid id maxime fugiat repellat sequi consequuntur, numquam incidunt facere delectus, officiis sed. Quidem!</p>
-    <p>Rem non eius veritatis obcaecati iste saepe velit doloribus dignissimos animi suscipit impedit vero, dolorem corrupti quae sunt voluptate ducimus modi culpa perspiciatis blanditiis autem nihil nisi eligendi deserunt. Recusandae.</p>
-    <p>Reprehenderit, velit accusamus omnis numquam minus unde, aliquid nam sequi fuga dolores ab eligendi consequatur quia explicabo odio dicta reiciendis tempora officiis dolorum repudiandae. Vitae aliquam similique officia magnam qui!</p>
-    <p>Odio et, dolorem iste repellat itaque ea voluptas temporibus, exercitationem obcaecati delectus illo! Rerum esse, alias magni sit nulla maiores ad laudantium assumenda ipsa animi ipsum at cupiditate ut qui.</p>
-    <p>Nihil quis qui, ratione eaque inventore, aliquid odio magni maxime aliquam reprehenderit dolorem ea rerum facere. Officia, quia? Neque recusandae facere qui necessitatibus temporibus, nulla voluptas dolor adipisci modi fugit!</p>
-    <p>Eaque error consequatur vel tempora unde tempore illo dolorem tenetur porro sequi magni sed delectus perferendis reiciendis ea, cumque nesciunt, assumenda illum recusandae ratione voluptates dolores aliquid amet. Repellendus, in?</p>
-    <p>Facere deserunt atque aperiam rerum corporis mollitia, et culpa aspernatur quia dolores deleniti nostrum maxime autem veniam corrupti iusto illum voluptate odio alias rem doloremque voluptatibus necessitatibus sed omnis. Deserunt?</p>
-    <p>Ut optio voluptatibus voluptate ipsa ea magni possimus inventore necessitatibus veniam neque, aut ab similique distinctio atque omnis, sit harum praesentium nostrum deserunt quas. Eaque quisquam deserunt ab temporibus similique.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe nemo perferendis tempore vel quo natus aliquid id maxime fugiat repellat sequi consequuntur, numquam incidunt facere delectus, officiis sed. Quidem!</p>
-    <p>Rem non eius veritatis obcaecati iste saepe velit doloribus dignissimos animi suscipit impedit vero, dolorem corrupti quae sunt voluptate ducimus modi culpa perspiciatis blanditiis autem nihil nisi eligendi deserunt. Recusandae.</p>
-    <p>Reprehenderit, velit accusamus omnis numquam minus unde, aliquid nam sequi fuga dolores ab eligendi consequatur quia explicabo odio dicta reiciendis tempora officiis dolorum repudiandae. Vitae aliquam similique officia magnam qui!</p>
-    <p>Odio et, dolorem iste repellat itaque ea voluptas temporibus, exercitationem obcaecati delectus illo! Rerum esse, alias magni sit nulla maiores ad laudantium assumenda ipsa animi ipsum at cupiditate ut qui.</p>
-    <p>Nihil quis qui, ratione eaque inventore, aliquid odio magni maxime aliquam reprehenderit dolorem ea rerum facere. Officia, quia? Neque recusandae facere qui necessitatibus temporibus, nulla voluptas dolor adipisci modi fugit!</p>
-    <p>Eaque error consequatur vel tempora unde tempore illo dolorem tenetur porro sequi magni sed delectus perferendis reiciendis ea, cumque nesciunt, assumenda illum recusandae ratione voluptates dolores aliquid amet. Repellendus, in?</p>
-    <p>Facere deserunt atque aperiam rerum corporis mollitia, et culpa aspernatur quia dolores deleniti nostrum maxime autem veniam corrupti iusto illum voluptate odio alias rem doloremque voluptatibus necessitatibus sed omnis. Deserunt?</p>
-    <p>Ut optio voluptatibus voluptate ipsa ea magni possimus inventore necessitatibus veniam neque, aut ab similique distinctio atque omnis, sit harum praesentium nostrum deserunt quas. Eaque quisquam deserunt ab temporibus similique.</p>
-</body>
+        <div id="demo-container">
+            <div id="red" class="example">example DIV</div>
+            <div id="blue" class="example">example DIV</div>
+            <div id="green" class="example">example DIV</div>
+        </div>
+        
+        <p>Facere deserunt atque aperiam rerum corporis mollitia, et culpa aspernatur quia dolores deleniti nostrum maxime autem veniam corrupti iusto illum voluptate odio alias rem doloremque voluptatibus necessitatibus sed omnis. Deserunt?</p>
+        <p>Ut optio voluptatibus voluptate ipsa ea magni possimus inventore necessitatibus veniam neque, aut ab similique distinctio atque omnis, sit harum praesentium nostrum deserunt quas. Eaque quisquam deserunt ab temporibus similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe nemo perferendis tempore vel quo natus aliquid id maxime fugiat repellat sequi consequuntur, numquam incidunt facere delectus, officiis sed. Quidem!</p>
+        <p>Rem non eius veritatis obcaecati iste saepe velit doloribus dignissimos animi suscipit impedit vero, dolorem corrupti quae sunt voluptate ducimus modi culpa perspiciatis blanditiis autem nihil nisi eligendi deserunt. Recusandae.</p>
+        <p>Reprehenderit, velit accusamus omnis numquam minus unde, aliquid nam sequi fuga dolores ab eligendi consequatur quia explicabo odio dicta reiciendis tempora officiis dolorum repudiandae. Vitae aliquam similique officia magnam qui!</p>
+        <p>Odio et, dolorem iste repellat itaque ea voluptas temporibus, exercitationem obcaecati delectus illo! Rerum esse, alias magni sit nulla maiores ad laudantium assumenda ipsa animi ipsum at cupiditate ut qui.</p>
+        <p>Nihil quis qui, ratione eaque inventore, aliquid odio magni maxime aliquam reprehenderit dolorem ea rerum facere. Officia, quia? Neque recusandae facere qui necessitatibus temporibus, nulla voluptas dolor adipisci modi fugit!</p>
+        <p>Eaque error consequatur vel tempora unde tempore illo dolorem tenetur porro sequi magni sed delectus perferendis reiciendis ea, cumque nesciunt, assumenda illum recusandae ratione voluptates dolores aliquid amet. Repellendus, in?</p>
+        <p>Facere deserunt atque aperiam rerum corporis mollitia, et culpa aspernatur quia dolores deleniti nostrum maxime autem veniam corrupti iusto illum voluptate odio alias rem doloremque voluptatibus necessitatibus sed omnis. Deserunt?</p>
+        <p>Ut optio voluptatibus voluptate ipsa ea magni possimus inventore necessitatibus veniam neque, aut ab similique distinctio atque omnis, sit harum praesentium nostrum deserunt quas. Eaque quisquam deserunt ab temporibus similique.</p>
+        <p>Ut optio voluptatibus voluptate ipsa ea magni possimus inventore necessitatibus veniam neque, aut ab similique distinctio atque omnis, sit harum praesentium nostrum deserunt quas. Eaque quisquam deserunt ab temporibus similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe nemo perferendis tempore vel quo natus aliquid id maxime fugiat repellat sequi consequuntur, numquam incidunt facere delectus, officiis sed. Quidem!</p>
+        <p>Rem non eius veritatis obcaecati iste saepe velit doloribus dignissimos animi suscipit impedit vero, dolorem corrupti quae sunt voluptate ducimus modi culpa perspiciatis blanditiis autem nihil nisi eligendi deserunt. Recusandae.</p>
+        <p>Reprehenderit, velit accusamus omnis numquam minus unde, aliquid nam sequi fuga dolores ab eligendi consequatur quia explicabo odio dicta reiciendis tempora officiis dolorum repudiandae. Vitae aliquam similique officia magnam qui!</p>
+        <p>Odio et, dolorem iste repellat itaque ea voluptas temporibus, exercitationem obcaecati delectus illo! Rerum esse, alias magni sit nulla maiores ad laudantium assumenda ipsa animi ipsum at cupiditate ut qui.</p>
+        <p>Nihil quis qui, ratione eaque inventore, aliquid odio magni maxime aliquam reprehenderit dolorem ea rerum facere. Officia, quia? Neque recusandae facere qui necessitatibus temporibus, nulla voluptas dolor adipisci modi fugit!</p>
+        <p>Eaque error consequatur vel tempora unde tempore illo dolorem tenetur porro sequi magni sed delectus perferendis reiciendis ea, cumque nesciunt, assumenda illum recusandae ratione voluptates dolores aliquid amet. Repellendus, in?</p>
+        <p>Facere deserunt atque aperiam rerum corporis mollitia, et culpa aspernatur quia dolores deleniti nostrum maxime autem veniam corrupti iusto illum voluptate odio alias rem doloremque voluptatibus necessitatibus sed omnis. Deserunt?</p>
+        <p>Ut optio voluptatibus voluptate ipsa ea magni possimus inventore necessitatibus veniam neque, aut ab similique distinctio atque omnis, sit harum praesentium nostrum deserunt quas. Eaque quisquam deserunt ab temporibus similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe nemo perferendis tempore vel quo natus aliquid id maxime fugiat repellat sequi consequuntur, numquam incidunt facere delectus, officiis sed. Quidem!</p>
+        <p>Rem non eius veritatis obcaecati iste saepe velit doloribus dignissimos animi suscipit impedit vero, dolorem corrupti quae sunt voluptate ducimus modi culpa perspiciatis blanditiis autem nihil nisi eligendi deserunt. Recusandae.</p>
+        <p>Reprehenderit, velit accusamus omnis numquam minus unde, aliquid nam sequi fuga dolores ab eligendi consequatur quia explicabo odio dicta reiciendis tempora officiis dolorum repudiandae. Vitae aliquam similique officia magnam qui!</p>
+        <p>Odio et, dolorem iste repellat itaque ea voluptas temporibus, exercitationem obcaecati delectus illo! Rerum esse, alias magni sit nulla maiores ad laudantium assumenda ipsa animi ipsum at cupiditate ut qui.</p>
+        <p>Nihil quis qui, ratione eaque inventore, aliquid odio magni maxime aliquam reprehenderit dolorem ea rerum facere. Officia, quia? Neque recusandae facere qui necessitatibus temporibus, nulla voluptas dolor adipisci modi fugit!</p>
+        <p>Eaque error consequatur vel tempora unde tempore illo dolorem tenetur porro sequi magni sed delectus perferendis reiciendis ea, cumque nesciunt, assumenda illum recusandae ratione voluptates dolores aliquid amet. Repellendus, in?</p>
+        <p>Facere deserunt atque aperiam rerum corporis mollitia, et culpa aspernatur quia dolores deleniti nostrum maxime autem veniam corrupti iusto illum voluptate odio alias rem doloremque voluptatibus necessitatibus sed omnis. Deserunt?</p>
+        <p>Ut optio voluptatibus voluptate ipsa ea magni possimus inventore necessitatibus veniam neque, aut ab similique distinctio atque omnis, sit harum praesentium nostrum deserunt quas. Eaque quisquam deserunt ab temporibus similique.</p>
+    </body>
 </html>

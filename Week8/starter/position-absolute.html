@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position - Absolute</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Position - Absolute</title>
+        <style>
 
-        body {
-            margin: unset; /* We want to remove any margins, paddings on the body to demonstrate that absolutely positioned elements reference the body when there are no other positioned elements */
-        }
+            body {
+                margin: unset; /* We want to remove any margins, paddings on the body to demonstrate that absolutely positioned elements reference the body when there are no other positioned elements */
+            }
 
-        #demo-container {
-            /* we remove margin and specific width and height to show how they can influence the position of the children elements that are aboslutely positioned */
-            border: 1px solid grey;
-            /* Remove the comments from the following properties, to re-activate them, and see how they influence the absolutely positioned children elements */
-            /* margin: 2em;
-            height: 600px;
-            width: 800px; */
+            #demo-container {
+                /* we remove margin and specific width and height to show how they can influence the position of the children elements that are aboslutely positioned */
+                border: 1px solid grey;
+                /* Remove the comments from the following properties, to re-activate them, and see how they influence the absolutely positioned children elements */
+                /* margin: 2em;
+                height: 600px;
+                width: 800px; */
 
-        }
+            }
 
-        .example {
-            width: 100px;
-            height: 100px;
-            /* Add position:absolute to this CSS block to change the position on all divs with a class of example */
+            .example {
+                width: 100px;
+                height: 100px;
+                /* Add position:absolute to this CSS block to change the position on all divs with a class of example */
 
-        }
+            }
+            
+            #red {
+                background-color: rgb(255, 0, 0);
+                /* Add values for either top, right, bottom and/or left properties to this CSS block to change the position on the divs with the id of red */
         
-        #red {
-            background-color: rgb(255, 0, 0);
-            /* Add values for either top, right, bottom and/or left properties to this CSS block to change the position on the divs with the id of red */
-    
-        }
+            }
 
-        #blue {
-            background-color: rgb(106, 161, 250);
-            /* Add values for either top, right, bottom and/or left properties to this CSS block to change the position on the divs with the id of blue */
+            #blue {
+                background-color: rgb(106, 161, 250);
+                /* Add values for either top, right, bottom and/or left properties to this CSS block to change the position on the divs with the id of blue */
 
-        }
+            }
 
-        #green {
-            background-color: rgb(64, 255, 64);
-            /* Add values for either top, right, bottom and/or left properties to this CSS block to change the position on the divs with the id of green */
+            #green {
+                background-color: rgb(64, 255, 64);
+                /* Add values for either top, right, bottom and/or left properties to this CSS block to change the position on the divs with the id of green */
 
-        }
+            }
 
-    </style>
-</head>
-<body>
-    <h1>Demo - Position: Absolute</h1>
-    <div id="demo-container">
-        <div id="red" class="example">example DIV</div>
-        <div id="blue" class="example">example DIV</div>
-        <div id="green" class="example">example DIV</div>
-    </div>
-</body>
+        </style>
+    </head>
+    <body>
+        <h1>Demo - Position: Absolute</h1>
+        <div id="demo-container">
+            <div id="red" class="example">example DIV</div>
+            <div id="blue" class="example">example DIV</div>
+            <div id="green" class="example">example DIV</div>
+        </div>
+    </body>
 </html>
