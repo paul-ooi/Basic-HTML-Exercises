@@ -1,5 +1,8 @@
 /* Comment */
-
+nav {
+    display: inline-block;
+    vertical-align: middle;
+}
 /* Change the look of all ul elements, by removing bullet points and removing spacing around */
 ul {
 	list-style: none;
@@ -33,6 +36,12 @@ nav li > ul,
 	box-shadow: 2px 2px 2px rgba(211, 193, 193, 0.4);
 	left: 0; /* Position the left most part of this ul to the nearest ancestor element that is position: relative */
 	top: 75%; /* Position the top most part of this ul to the nearest ancestor element that is position: relative by 100% from their top edge position*/
+}
+
+/* Example of overriding the anchor style established on line 17*/
+a.logo-container {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* When the mouse hovers over an anchor that is a descendant of an element with the submenu class, change the background to green and text to a light green */
