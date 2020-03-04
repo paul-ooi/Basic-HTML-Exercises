@@ -1,0 +1,95 @@
+/*****************
+Food Styles
+******************/
+.menu header {
+	background-color: initial;
+	padding: 2em;
+	text-align: center;
+}
+
+.menu header h1 {
+	margin-top: 0;
+}
+
+.menu header p {
+	margin: 0;
+}
+
+.menu > .container {
+	display: flex;
+	background-color: rgba(255, 220, 107, 0.4);
+}
+.menu > .container.dinner {
+	display: flex;
+	background-color: rgba(255, 220, 107, 0.4);
+	flex-direction: row-reverse;
+}
+
+.menu > .container > div {
+	flex: 0 1 50%;
+	box-sizing: border-box;
+	max-width: 50%;
+}
+
+/*****************
+Feature image next to Food List
+*****************/
+.image-container {
+	overflow: hidden;
+	height: 500px;
+	position: relative;
+}
+
+.image-container img {
+	max-height: 100%;
+}
+
+.dinner .image-container img {
+	width: 100%;
+	height: auto;
+	max-height: none;
+	position: absolute;
+	bottom: 0px;
+}
+
+/*****************
+Food Menu List Area
+*****************/
+.menu-list {
+	padding: 1em 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.menu-list h2 {
+	text-align: center;
+}
+
+.menu-list ul {
+	list-style: none;
+	padding: 0px;
+}
+
+.menu-item {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+.menu-item h3,
+.menu-item .price {
+	box-sizing: border-box;
+	flex: 1 0 50%;
+	max-width: 50%;
+	margin: 0px 0px 0.3em 0px;
+}
+
+.menu-item .price {
+	text-align: right;
+}
+
+.menu-item .description {
+	box-sizing: border-box;
+	margin: 0px;
+	flex: 1 0 100%;
+}

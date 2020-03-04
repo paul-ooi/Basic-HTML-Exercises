@@ -1,0 +1,108 @@
+/*****************
+General Styles
+******************/
+html {
+	box-sizing: content-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: 400;
+}
+
+header {
+	height: 60px;
+	background-color: rgba(255, 220, 107, 0.4);
+}
+
+footer {
+	background-color: rgb(46, 139, 87);
+	color: white;
+	text-align: center;
+	padding: 2em 1em;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	margin: 1em 0;
+}
+
+#logo {
+	float: left;
+	max-height: 60px;
+}
+
+/*****************
+Navigation
+******************/
+#main-nav {
+	float: right;
+	margin-top: 15px;
+}
+
+#main-nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px; /* override ua-styling */
+}
+
+#main-nav > ul > li {
+	display: inline-block;
+}
+
+#main-nav a {
+	display: block;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 1.2px;
+	text-decoration: none;
+	color: rgb(46, 139, 87);
+	transition: 0.3s;
+	padding: 10px 20px;
+}
+
+#main-nav a:hover {
+	background: rgb(46, 139, 87);
+	color: white;
+}
+
+#main-nav::after {
+	content: "";
+	clear: both;
+}
+
+.has-submenu {
+	position: relative;
+}
+
+.submenu {
+	position: absolute; /* This value takes it out of normal flow */
+	display: none; /* This hides the submenu */
+
+	background: #d6e1e7;
+	box-shadow: 2px 2px 2px rgba(211, 193, 193, 0.4);
+	left: 0; /* Position the left most part of this ul to the nearest ancestor element that is position: relative */
+	top: 85%; /* Position the top most part of this ul to the nearest ancestor element that is position: relative by 100% from their top edge position*/
+	z-index: 2;
+}
+
+.submenu a:hover {
+	background: rgb(36, 119, 57);
+	color: rgb(190, 214, 196);
+}
+
+.has-submenu:hover {
+	overflow: initial;
+}
+
+.has-submenu:hover .submenu {
+	display: initial;
+}

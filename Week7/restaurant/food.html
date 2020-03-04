@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Food at Marche Restaurant</title>
+        <link href="styles/general-styles.css" type="text/css" rel="stylesheet"/>
+        <link href="styles/food-styles.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="./images/Marché-Logo.png" alt="Fabulous Marche Restaurant logo">
+            <nav id="main-nav"> 
+                <!-- USING A NAV ELEMENT, IDENTIFIES TO SCREEN READERS AND SITE CRAWLERS THAT THIS AS A LIST OF NAVIGATION ITEMS. WE DID NOT USE THIS IN THE EXAMPLE IN CLASS -->
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a>Menu</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="food.html">Food</a>
+                            </li>
+                            <li>
+                                <a href="drinks.html">Drinks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="menu food">
+            <header>
+                <h1>Our Menu</h1>
+                <p>Grown local, Served Fresh.</p>
+            </header>
+            <div class="container">
+                <div class="menu-list">
+                    <!-- Menu details taken from : https://www.leselect.com/menus -->
+                    <h2>Lunch</h2>
+                    <ul>
+                        <li class="menu-item">
+                            <h3>Steak Tartare</h3>
+                            <span class="price">19.95</span>
+                            <span class="description">Grass-fed Angus beef Tartare with chopped pistachios. Served with frites</span>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Duck Confit</h3>
+                            <span class="price">19.95</span>
+                            <span class="description">Traditional duck leg confit with crispy skin, served with potato au gratin</span>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Cassoulet</h3>
+                            <span class="price">21.95</span>
+                            <span class="description">Braised white lingot beans with lamb, pork belly, Toulouse sausage and duck confit</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="./images/amirali-mirhashemian-eRyMytuT0yg-unsplash.jpg" alt="Steak dish">
+                    <!-- Photo by amirali mirhashemian on Unsplash -->
+                </div>
+            </div>
+            <div class="container dinner">
+                <div class="menu-list">
+                    <!-- Menu details taken from : https://www.leselect.com/menus -->
+                    <h2>Dinner</h2>
+                    <ul>
+                        <li class="menu-item">
+                            <h3>Gargouillou</h3>
+                            <span class="price">22.95</span>
+                            <span class="description">This plant-based dish is not only good for you and the planet, it is delicious! Crispy croquettes of sweet potato, buckwheat, quinoa, seeds, with Ratatouille, almonds & tomato fondue</span>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Tartare de saumon</h3>
+                            <span class="price">16.95</span>
+                            <span class="description">with capers, sunflower seeds, horseradish, a herb-infused virgin olive oil and toasted slices of rye sourdough</span>
+                        </li>
+                        <li class="menu-item">
+                            <h3>St-jacques au bois de pommier</h3>
+                            <span class="price">31.95</span>
+                            <span class="description">Atlantic scallops lightly-smoked over applewood, seared and served, with celery and cauliflower purée</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="./images/casey-lee-awj7sRviVXo-unsplash.jpg" alt="salmon dish">
+                    <!-- Photo by Casey Lee on Unsplash -->
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright 2020 - Marche Restaurant.</p>
+            <address>
+                1234 Main Street, Toronto, Ontario, W2E 4T5 <br>
+                <a href="tel:+4161234567">(416) 123-4567</a> | <a href="mailto:info@marcherstaurant.com">info@marcherstaurant.com</a>
+            </address>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome to Marche Restaurant</title>
+        <link href="styles/general-styles.css" type="text/css" rel="stylesheet"/>
+        <link href="styles/contact-styles.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="./images/Marché-Logo.png" alt="Fabulous Marche Restaurant logo">
+            <nav id="main-nav"> 
+                <!-- USING A NAV ELEMENT, IDENTIFIES TO SCREEN READERS AND SITE CRAWLERS THAT THIS AS A LIST OF NAVIGATION ITEMS. WE DID NOT USE THIS IN THE EXAMPLE IN CLASS -->
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a>Menu</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="food.html">Food</a>
+                            </li>
+                            <li>
+                                <a href="drinks.html">Drinks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="contact">
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <h2>Contact Form</h2>
+                        <p>Please fill in as many fields as possible. We do our best to get back to you in 2 days.</p>
+                    </div>
+                    <div class="row">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Jane Smith">
+                    </div>
+                    <div class="row">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="me@example.com">
+                    </div>
+                    <div class="row">
+                        <label for="concern">Topic of concern:</label>
+                        <select name="concern" id="concern">
+                            <option value="reservation">reservation</option>
+                            <option value="complaint">complaint</option>
+                            <option value="review">review</option>
+                            <option value="information">information</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="message">Message:</label>
+                        <textarea name="messsage" id="message" placeholder="More details..."></textarea>
+                    </div>
+
+                </form>
+                <div class="image-container">
+                    <img src="./images/scott-warman-rrYF1RfotSM-unsplash.jpg" alt="Friends with drinks celebrating">
+                        <!-- Photo by Scott Warman on Unsplash -->
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright 2020 - Marche Restaurant.</p>
+            <address>
+                1234 Main Street, Toronto, Ontario, W2E 4T5 <br>
+                <a href="tel:+4161234567">(416) 123-4567</a> | <a href="mailto:info@marcherstaurant.com">info@marcherstaurant.com</a>
+            </address>
+        </footer>
+    </body>
+</html>

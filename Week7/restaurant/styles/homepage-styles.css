@@ -1,0 +1,82 @@
+/*****************
+Feature Container
+******************/
+
+.feature-container {
+	clear: both; /* re-establishes normal flow, without float */
+	height: 400px;
+	padding-top: 150px; /* to position the h1 vertically inside */
+}
+
+.feature-container h1 {
+	vertical-align: middle;
+	color: white;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+	font-size: 4em;
+	max-width: 60%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* using an img tag */
+.feature-container {
+	height: 400px;
+	overflow: hidden;
+	padding-top: 0px;
+	position: relative;
+}
+.feature-container img {
+	max-width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.feature-container h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*****************
+Blog Section
+******************/
+
+#blog {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+#blog h2 {
+	text-align: center;
+}
+figure {
+	margin: 0px;
+	max-width: 100%;
+}
+
+figure img {
+	width: 100%;
+	height: auto;
+}
+.row {
+	display: -webkit-flex;
+	display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+	-webkit-flex: 0 1 33.33%;
+	-ms-flex: 0 1 33.33%;
+	flex: 0 1 33.33%;
+	padding: 0 1em;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+	.column {
+		-webkit-flex: 1 0 100%;
+		-ms-flex: 1 0 100%;
+		flex: 1 0 100%;
+	}
+}

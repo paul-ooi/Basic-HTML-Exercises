@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Drinks at Marche Restaurant</title>
+        <link href="styles/general-styles.css" type="text/css" rel="stylesheet"/>
+        <link href="styles/homepage-styles.css" type="text/css" rel="stylesheet"/>
+        <link href="styles/food-styles.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300,400,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="./images/Marché-Logo.png" alt="Fabulous Marche Restaurant logo">
+            <nav id="main-nav"> 
+                <!-- USING A NAV ELEMENT, IDENTIFIES TO SCREEN READERS AND SITE CRAWLERS THAT THIS AS A LIST OF NAVIGATION ITEMS. WE DID NOT USE THIS IN THE EXAMPLE IN CLASS -->
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a>Menu</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="food.html">Food</a>
+                            </li>
+                            <li>
+                                <a href="drinks.html">Drinks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="menu drinks">
+            <header>
+                <h1>Our Drinks</h1>
+                <p>It's always happy hour</p>
+            </header>
+            <div class="container">
+                <div class="menu-list">
+                    <!-- Menu details taken from : https://www.leselect.com/menus -->
+                    <h2>Wines</h2>
+                    <ul>
+                        <li class="menu-item">
+                            <h3>Merlot</h3>
+                            <span class="price">6.50 (3oz)</span>
+                            <span class="description">Henry of Pelham, Niagara</span>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Chardonnay</h3>
+                            <span class="price">8.50 (3oz)</span>
+                            <span class="description">Quarry Road, Tawse, (Org.)</span>
+                        </li>
+                        <li class="menu-item">
+                            <h3>Riesling</h3>
+                            <span class="price">7.25 (3oz)</span>
+                            <span class="description">Rosewood, Niagara</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image-container">
+                    <img src="./images/scott-warman-rrYF1RfotSM-unsplash.jpg" alt="Friends with drinks celebrating">
+                        <!-- Photo by Scott Warman on Unsplash -->
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright 2020 - Marche Restaurant.</p>
+            <address>
+                1234 Main Street, Toronto, Ontario, W2E 4T5 <br>
+                <a href="tel:+4161234567">(416) 123-4567</a> | <a href="mailto:info@marcherstaurant.com">info@marcherstaurant.com</a>
+            </address>
+        </footer>
+    </body>
+</html>
