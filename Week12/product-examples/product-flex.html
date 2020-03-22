@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Product Section - Using Flexbox</title>
+        <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/general-styles.css">
+        <link rel="stylesheet" href="./css/flex-styles.css">
+    </head>
+    <body>
+        <section id="banner">
+            <h1>Shop Collection</h1>
+            <img src="./images/rack-of-tshirts.jpg" alt="rack of shirts in different colors">
+            <!-- https://burst.shopify.com/clothes -->
+        </section>
+        <main>
+            <h2>T-Shirts</h2>
+            <section id="shop-container">
+                <div id="shirts-container">
+            
+                    <div class="shirt-card">
+                        <div class="shirt-image-wrapper">
+                          <img src="./images/bright-purple-t-shirt.jpg" alt="t-shirt hung on hanger">
+                          <!-- https://burst.shopify.com/clothes -->
+                        </div>
+                        <div class="shirt-info">
+                          <h3>Cotton Shirt</h3>
+                          <h4><span class="current">$14.99</span><span class="currency">CAD</span></h4>
+                        </div>
+                    </div>
+            
+                    <div class="shirt-card">
+                        <div class="shirt-image-wrapper">
+                          <img src="./images/cobalt-blue-t-shirt.jpg" alt="t-shirt hung on hanger">
+                          <!-- https://burst.shopify.com/clothes -->
+                        </div>
+                        <div class="shirt-info">
+                          <h3>Cotton Shirt</h3>
+                          <h4><span class="current">$14.99</span><span class="currency">CAD</span></h4>
+                        </div>
+                    </div>
+            
+                    <div class="shirt-card">
+                        <div class="shirt-image-wrapper">
+                          <img src="./images/green-t-shirt.jpg" alt="t-shirt hung on hanger">
+                          <!-- https://burst.shopify.com/clothes -->
+                        </div>
+                        <div class="shirt-info">
+                          <h3>Cotton Shirt</h3>
+                          <h4><span class="current">$14.99</span><span class="currency">CAD</span></h4>
+                        </div>
+                    </div>
+            
+                    <div class="shirt-card">
+                        <div class="shirt-image-wrapper">
+                          <img src="./images/grey-t-shirt.jpg" alt="t-shirt hung on hanger">
+                          <!-- https://burst.shopify.com/clothes -->
+                        </div>
+                        <div class="shirt-info">
+                          <h3>Cotton Shirt</h3>
+                          <h4><span class="current">$14.99</span><span class="currency">CAD</span></h4>
+                        </div>
+                    </div>
+            
+                    <div class="shirt-card">
+                        <div class="shirt-image-wrapper">
+                          <img src="./images/striped-fashion-shirt.jpg" alt="black and white horizontally striped t-shirt worn by a model">
+                          <!-- https://burst.shopify.com/clothes -->
+                        </div>
+                        <div class="shirt-info">
+                          <h3>Cotton Striped Shirt</h3>
+                          <h4><span class="current">$19.99</span><span class="currency">CAD</span></h4>
+                        </div>
+                    </div>
+            
+                    <div class="shirt-card">
+                        <div class="shirt-image-wrapper">
+                          <img src="./images/teal-t-shirt.jpg" alt="t-shirt hung on hanger">
+                          <!-- https://burst.shopify.com/clothes -->
+                        </div>
+                        <div class="shirt-info">
+                          <h3>Cotton Shirt</h3>
+                          <h4><span class="current">$14.99</span><span class="currency">CAD</span></h4>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <aside id="shop-controls">
+                <h2>Filters</h2>
+                <form>
+                    <div class="filter-option">
+                        <label for="design">Design Type:</label>
+                        <select name="design" id="design">
+                            <option value="all" selected>All Designs</option>
+                            <option value="solid">Solid Colour</option>
+                            <option value="multi-color">Multi Colour</option>
+                            <option value="graphic">Graphic Prints</option>
+                        </select>
+                    </div>
+                    <div class="filter-option">
+                        <label for="sort">Sort By:</label>
+                        <select name="sort" id="sort">
+                            <option value="">None</option>
+                            <option value="featured" selected >Featured</option>
+                            <option value="high-price">Price: High to Low</option>
+                            <option value="low-price">Price: Low to High</option>
+                            <option value="sale">On Sale/Clearance</option>
+                        </select>
+                    </div>
+                    <button type="submit">Apply Filters</button>
+                </form>
+            </aside> 
+        </main>
+    </body>
+</html>
