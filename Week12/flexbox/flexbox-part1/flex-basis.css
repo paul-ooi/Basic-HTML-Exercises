@@ -1,0 +1,9 @@
+.bkg-red {
+	flex-basis: 20%;
+}
+.bkg-blue {
+	flex-basis: 40%;
+}
+.bkg-green {
+	flex-grow: 1;
+}

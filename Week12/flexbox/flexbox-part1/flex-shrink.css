@@ -1,0 +1,13 @@
+.child {
+	width: 500px;
+}
+/* TO MAKE THIS EXAMPLE RELEVANT, WE ADD A LARGER WIDTH TO THE CHILDREN ELEMENTS/FLEX-ITEMS, NOTICE THE RATE THAT THESE ITEMS SHRINK AS THE BROWSER GETS SMALLER*/
+.bkg-red {
+	flex-shrink: 0.5;
+}
+.bkg-blue {
+	flex-shrink: 1;
+}
+.bkg-green {
+	flex-shrink: 2;
+}
