@@ -1,0 +1,66 @@
+/* DO NOT MODIFY STYLES IN THIS FILE, CREATE YOUR OWN FILE AND LINK TO IT IN THE HTML */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+}
+.instructions {
+	max-width: 50%;
+}
+.instructions em {
+	color: rgb(109, 156, 33);
+}
+.instructions strong {
+	color: rgb(182, 46, 22);
+}
+
+h2 {
+	margin: 0;
+}
+
+#profiles {
+	list-style: none;
+	padding-left: 0;
+	max-width: 600px;
+	border-radius: 2em;
+	background: rgba(0, 150, 200, 0.2);
+	box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	/* padding: 3em; */
+}
+
+#profiles > li:not(:last-child) {
+	border-bottom: 1px solid grey;
+}
+
+.profile {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 3px solid white;
+	box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+.stats ul {
+	list-style-position: inside;
+}
+
+.name,
+.job div,
+.education div,
+.height div,
+.interest div {
+	font-weight: bold;
+}
+
+.name {
+	font-size: 1.5em;
+}
+
+/* DO NOT MODIFY STYLES ABOVE THIS COMMENT */
