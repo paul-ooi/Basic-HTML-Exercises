@@ -4,6 +4,7 @@
 *.pdf
 *-Checklist.md
 *-checklist.md
+*answers.*
 
 # Allow images for example
 !Week12/**/*.jpg 
