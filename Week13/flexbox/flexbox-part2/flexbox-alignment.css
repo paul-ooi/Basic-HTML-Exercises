@@ -1,0 +1,9 @@
+#parent {
+    /* justify-content: space-around; */
+    align-content: space-between;
+    align-items: center;
+}
+
+#child-5 {
+    /* align-self: center; */
+}

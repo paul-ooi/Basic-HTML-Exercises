@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#flex {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.child {
+    height: 100px;
+    min-width: 100px;
+}
+
+.bkg-red {
+    background-color: rgb(255, 0, 0);
+}
+.bkg-blue {
+    background-color: rgb(106, 161, 250);
+}
+.bkg-green {
+    background-color: rgb(64, 255, 64);
+}

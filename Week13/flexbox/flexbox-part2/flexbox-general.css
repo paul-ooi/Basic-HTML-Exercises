@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.bkg-red {
+    background-color: rgb(255, 0, 0);
+}
+.bkg-blue {
+    background-color: rgb(106, 161, 250);
+}
+.bkg-green {
+    background-color: rgb(64, 255, 64);
+}
+
+#parent {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+    height: 500px;
+}
+
+.child {
+    height: 100px;
+    flex: 0 0 30%;
+    outline: 1px solid black;
+}
+
+#child-2,
+#child-4 {
+    height: 200px;
+}

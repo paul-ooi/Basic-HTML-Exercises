@@ -1,0 +1,7 @@
+#flex .child {
+    flex: 1 0 33%;
+}
+
+#flex {
+    flex-wrap: wrap;
+}
