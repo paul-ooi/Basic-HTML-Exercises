@@ -1,0 +1,46 @@
+.example pre {
+    display: block;
+    background-color: black;
+}
+.example code {
+    color: white;
+}
+.interactive {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#hover .interactive a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+#hover .interactive a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 2em;
+    color: orange;
+}
+
+#focus .interactive {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#focus .interactive input,
+#focus .interactive label {
+    transition: 0.3s;
+    margin: 0 1ch;
+}
+
+#focus .interactive input:focus {
+    border: 4px solid purple;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+#focus .interactive input:focus + label {
+    font-style: italic;
+    text-decoration: underline;
+    color: purple;
+}

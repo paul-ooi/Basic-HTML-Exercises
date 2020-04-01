@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pseudo Examples</title>
+        <link rel="stylesheet" href="pseudo-styles.css">
+    </head>
+    <body>
+
+        <h1>Pseudo Class Examples</h1>
+        <div class="topic" id="hover">
+
+            <h2><code>:hover</code></h2>
+            <div>
+                <details open class="example link">
+                    <summary>Example #1: Hover over a link.</summary>
+                    <div class="interactive">
+                        <a href="#" target="_blank" rel="noopener noreferrer">Hover over me</a>
+                    </div>
+        
+                    <pre>
+                        <code>
+                            a {
+                                text-decoration: none;
+                                transition: 0.3s;
+                            }
+                            a:hover {
+                                text-decoration: underline;
+                                font-weight: bold;
+                                font-size: 2em;
+                                color: orange;
+                            }
+                        </code>
+                    </pre>
+                </details>
+            </div>
+
+
+        </div>
+        <div class="topic" id="focus">
+
+            <h2><code>:focus</code></h2>
+            <div>
+                <details open class="example link">
+                    <summary>Example #2: User focus is on Input field. Click inside the input field.</summary>
+                    <div class="interactive">
+                        <input id="name" name="name" type="text">
+                        <label for="name">Name: </label>
+                    </div>
+        
+                    <pre>
+                        <code>
+                            #focus .interactive {
+                                display: flex;
+                                flex-direction: row-reverse;
+                                align-items: center;
+                                justify-content: flex-end;
+                            }
+                            
+                            #focus .interactive input,
+                            #focus .interactive label {
+                                transition: 0.3s;
+                                margin: 0 1ch;
+                            }
+                            
+                            #focus .interactive input:focus {
+                                border: 4px solid purple;
+                                padding: 0.5em 1em;
+                                border-radius: 0.5em;
+                            }
+                            #focus .interactive input:focus + label {
+                                font-style: italic;
+                                text-decoration: underline;
+                                color: purple;
+                            }
+                        </code>
+                    </pre>
+                </details>
+            </div>
+
+
+        </div>
+        
+    </body>
+</html>
