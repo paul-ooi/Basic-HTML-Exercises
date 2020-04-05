@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.child {
+    height: 100px;
+    min-width: 100px;
+    outline: 1px solid black;
+    background-color: rgba(114, 202, 243, 0.4);
+    font-size: 3em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .bkg-red {
+    background-color: rgb(255, 0, 0);
+}
+.bkg-blue {
+    background-color: rgb(106, 161, 250);
+}
+.bkg-green {
+    background-color: rgb(64, 255, 64);
+} */
