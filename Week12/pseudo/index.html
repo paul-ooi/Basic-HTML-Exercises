@@ -123,13 +123,25 @@
         
                     <pre>
                         <code>
-                            #checked .interactive input:checked {
-                                outline: 2px solid darkgreen;
+                            input:required {
+                                border: 3px dotted blue;
                             }
-
-                            #checked .interactive input:checked + label {
+                            input:required:focus {
+                                border: 3px dotted green;
+                                background-color: darkgoldenrod;
+                            }
+                            
+                            /* Add an asterix with an After element */
+                            #required .interactive input:required + label::after {
+                                content: "*";
+                                color: red;
                                 font-weight: bold;
-                                text-decoration: underline;
+                                margin-right: 1em;
+                            }
+                            #required .interactive {
+                                display: flex;
+                                flex-direction: row-reverse;
+                                justify-content: flex-end;
                             }
                         </code>
                     </pre>
