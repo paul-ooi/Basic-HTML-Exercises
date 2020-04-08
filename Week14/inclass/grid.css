@@ -1,5 +1,23 @@
 #grid {
     display: grid;
-    grid-template-columns: repeat(3, 150px);
-    justify-content: stretch;
+    grid-template-columns: repeat(4, 1fr) 200px;
+
+   height: 100vh;
+    gap: 1em;
+}
+
+#E {
+   background-color: blueviolet;
+    grid-row: 2 / 4;
+    grid-column: 2 / 5;
+    padding-right: 9em;
+    z-index: 10;
+}
+
+#F {
+    background-color: darkgreen;
+    grid-row: 1 / 3;
+    grid-column: 4 / 5 ;
+    z-index: 15;
+    margin-right: 2em;
 }

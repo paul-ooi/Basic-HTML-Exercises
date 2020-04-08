@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>table</title>
+        <style>
+        
+            .flexy {
+                display: flex;
+                justify-content: space-around
+            }
+            
+            .flexy table, 
+            .flexy table td, 
+            .flexy table th {
+                border: 1px solid;
+            }
+            
+            .flexy.second {
+                background: beige;
+                margin: 1em;
+            }
+            
+            .custom-list {
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <div id="services">
+        <div class="flexy">
+            <table>
+                <tr>
+                    <th colspan="2">Beginner</th>
+                </tr>
+                <tr>
+                   <th>Cost</th>
+                    <td>$59</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th colspan="2">Intermediate</th>
+                </tr>
+                <tr>
+                   <th>Cost</th>
+                    <td>$99</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th colspan="2">Expert</th>
+                </tr>
+                <tr>
+                   <th>Cost</th>
+                    <td>$199</td>
+                </tr>
+            </table>
+            
+        </div>
+        
+        <div class="flexy second">
+            <table>
+                <tr>
+                       <th></th>
+                    <th>Beginner</th>
+                    <th>Intermediate</th>
+                    <th>Expert</th>
+                </tr>
+                <tr>
+                   <th>Cost</th>
+                    <td>$59</td>
+                    <td>$99</td>
+                    <td>$199</td>
+
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+    
+    <ul class="custom-list">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    </body>
+</html>
