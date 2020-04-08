@@ -1,0 +1,48 @@
+.job,
+.education,
+.height,
+.interest {
+	display: flex;
+	margin-bottom: 1em;
+}
+
+.interest {
+	margin-bottom: 0px;
+}
+#profiles {
+	padding: 48px;
+}
+#profiles > li {
+	display: flex;
+}
+
+.profile {
+	flex: 0 1 150px;
+	margin-top: 30px;
+}
+
+h2 {
+	margin-top: 30px;
+}
+.stats {
+	flex: 1 1 200px;
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+
+.stats ul {
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.name {
+	margin-bottom: 0.5em;
+}
+
+.job div,
+.education div,
+.height div,
+.interest div {
+	/* flex-shrink: 2; */
+	flex-basis: 100px;
+}

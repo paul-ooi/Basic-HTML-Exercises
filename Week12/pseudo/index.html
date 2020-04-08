@@ -8,12 +8,13 @@
     <body>
 
         <h1>Pseudo Class Examples</h1>
+        <p>Click each summary to expand Example and code</p>
         <div class="topic" id="hover">
 
             <h2><code>:hover</code></h2>
             <div>
-                <details open class="example link">
-                    <summary>Example #1: Hover over a link.</summary>
+                <details class="example link">
+                    <summary>Example: Hover over a link.</summary>
                     <div class="interactive">
                         <a href="#" target="_blank" rel="noopener noreferrer">Hover over me</a>
                     </div>
@@ -41,7 +42,7 @@
 
             <h2><code>:focus</code></h2>
             <div>
-                <details open class="example link">
+                <details class="example link">
                     <summary>Example #2: User focus is on Input field. Click inside the input field.</summary>
                     <div class="interactive">
                         <input id="name" name="name" type="text">
@@ -72,6 +73,63 @@
                                 font-style: italic;
                                 text-decoration: underline;
                                 color: purple;
+                            }
+                        </code>
+                    </pre>
+                </details>
+            </div>
+
+
+        </div>
+        <div class="topic" id="checked">
+
+            <h2><code>:checked</code></h2>
+            <div>
+                <details class="example link">
+                    <summary>Example #3: Input field is a checkbox type and is selected.</summary>
+                    <div class="interactive">
+                        <input id="agreement" name="agreement" type="checkbox">
+                        <label for="agreement">I agree to ALL aspects of this agrement</label>
+                    </div>
+        
+                    <pre>
+                        <code>
+                            #checked .interactive input:checked {
+                                outline: 2px solid darkgreen;
+                            }
+
+                            #checked .interactive input:checked + label {
+                                font-weight: bold;
+                                text-decoration: underline;
+                            }
+                        </code>
+                    </pre>
+                </details>
+            </div>
+
+
+        </div>
+        
+        <div class="topic" id="required">
+
+            <h2><code>:required</code></h2>
+            <div>
+                <details class="example link">
+                    <summary>Example: Input field is required.</summary>
+                    <div class="interactive">
+                        <input id="email" name="email" type="email" required>
+                        <label for="email">Email</label>
+                    </div>
+        
+                    <pre>
+                        <code>
+                            #checked .interactive input:checked {
+                                outline: 2px solid darkgreen;
+                            }
+
+                            #checked .interactive input:checked + label {
+                                font-weight: bold;
+                                text-decoration: underline;
                             }
                         </code>
                     </pre>

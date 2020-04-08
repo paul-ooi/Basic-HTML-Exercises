@@ -8,3 +8,4 @@
 
 # Allow images for example
 !Week12/**/*.jpg 
+!Week12/**/answers.css 
